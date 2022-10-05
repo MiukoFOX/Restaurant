@@ -1,0 +1,799 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*::before,*::after{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust:100%;
+  -moz-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul,li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/****************************/
+
+
+body{
+ background-color:  #262628;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  height: 100%;
+  max-width: 3000px;
+}
+.header {
+  width: 100%;
+  height: 18%;
+  background: rgba(73, 74, 78, 0.7);
+}
+.header-container{
+  width: 100%;
+  height: 100%;
+}
+.header-body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 5% 0 5%;
+}
+.logo {
+  width: 13%;
+  height: 100%;
+  display: block;
+  background: url(../img/logo-fish.png) 30% 31px/63% auto no-repeat;
+}
+.contact {
+ position: relative;
+ top: 0;
+ left: 0;
+ text-align: right;
+ display: block;
+ width: 30%;
+ height: 70%;
+ padding:3.5% 0 0 0;
+}
+.contact p{
+  font-size: calc(11px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+}
+.header-menu {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5% 0 0 0;
+}
+.header-list li a{
+  height: 45%;
+  font-size: calc(15px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 500;
+}
+
+.header-list li:hover{
+  border-bottom: 4px solid #e1e1e1;
+  padding-bottom: 3%;
+}
+.header-burger{
+ display: none;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-size: calc(20px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 500;
+  padding: 5% 0 10% 0;
+}
+.main-block {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 15%;
+}
+.adress{
+  height: 200px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 0;
+}
+.adress p{
+  font-size: calc(10px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color:#e1e1e1;
+  font-weight: 400;
+  line-height: 35px;
+}
+.map-container {
+  width: 100%;
+}
+.map {
+  height: 400px;
+  min-width: 70%;
+}
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  width: 100%;
+  height: 25%;
+  background-color: #121314;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2% 0 2% 0;
+}
+.about {
+  width: 30%;
+}
+.about p:first-child {
+  font-size: calc(10px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+  padding: 0 0 3% 0;
+}
+.about p{
+  font-size: calc(9px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #3b3c3e;
+  font-weight: 400;
+  padding: 0 0 3% 0;
+}
+.phone {
+  text-align: right;
+  width: 40%;
+  font-size: calc(9px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+}
+@media only screen and (min-width: 1980px){
+.header {
+  height: 300px;
+}
+
+.logo {
+  background: url(../img/logo-fish.png) 30% 43px/68% auto no-repeat;
+}
+.contact {
+ top: 0;
+ left: 0;
+ padding: 5% 0 0 0;
+}
+.contact p{
+  font-size: calc(11px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+}
+.header-menu {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6% 0 0 0;
+}
+.header-list li{
+  height: 35%;
+  font-size: calc(15px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 500;
+}
+
+.header-list li:hover{
+  border-bottom: 4px solid #e1e1e1;
+  padding-bottom: 2%;
+}
+}
+@media only screen and (max-width: 1600px){
+ .header {
+  height: 200px;
+}
+.logo {
+  background: url(../img/logo-fish.png) 30% 43px/70% auto no-repeat;
+}
+.contact {
+  width: 35%;
+ top: 0;
+ left: 0;
+ padding: 5.5% 0 0 0;
+}
+.contact p{
+  font-size: calc(11px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+}
+.header-menu {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 7% 0 0 0;
+}
+.header-list li{
+  height: 35%;
+  font-size: calc(15px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 500;
+}
+.header-list li:hover{
+  border-bottom: 4px solid #e1e1e1;
+  padding-bottom: 1%;
+}
+.main-block{
+  min-height: 100%;
+}
+.adress{
+ height: 200px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 0;
+}
+.adress p{
+  font-size: calc(10px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color:#e1e1e1;
+  font-weight: 400;
+  line-height: 35px;
+}
+.map-container {
+  width: 100%;
+}
+.map {
+  height: 400px;
+  min-width: 70%;
+}
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  width: 100%;
+  height: 35%;
+  background-color: #121314;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5% 0 5% 0;
+}
+@media only screen and (max-width: 1050px){
+  body.lock{
+    overflow: hidden;
+  }
+ .header {
+  height: 120px;
+}
+.logo {
+  background: url(../img/logo-fish.png) 30% 20px/80% no-repeat;
+  z-index: 1;
+}
+.contact {
+ width: 40%;
+ top: 0;
+ left: 0;
+ padding: 5.5% 0 0 0;
+}
+.contact p{
+  font-size: calc(11px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+}
+.header-menu {
+  overflow: auto;
+ position: fixed;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ top: -100%;
+ left: 0;
+ width: 20%;
+ height: 30%;
+ border-radius: 7px;
+ background-color: rgb(62, 63, 66);
+ padding: 3%;
+ z-index: 2;
+ transition: all 0.4s ease 0s;
+}
+.header-menu.active{
+  top: 117px;
+}
+.header-list{
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.header-list li{
+  height: 35%;
+  font-size: calc(15px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 500;
+}
+
+.header-list li:hover{
+  height: 100%;
+  border-bottom: 4px solid #e1e1e1;
+  padding-bottom: 1%;
+}
+.header-burger{
+ display: block;
+ position: relative;
+ top: 40%;
+ right: 17%;
+ width: 75px;
+ height: 50px;
+ z-index: 3;
+}
+.header-burger:before,
+.header-burger:after{
+  content: '';
+  background-color:#e1e1e1;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+.header-burger:before{
+  top: -5px;
+}
+.header-burger:after{
+  bottom: 20px;
+}
+.header-burger.active:before{
+ transform:rotate(45deg);
+ top:11px
+}
+.header-burger.active:after{
+ transform:rotate(-45deg);
+ bottom: 36px;
+}
+.header-burger.active span{
+  transform: scale(0);
+}
+.header-burger span{
+position: absolute;
+background-color:#e1e1e1;
+left: 0;
+width: 100%;
+height: 3px;
+top: 12px;
+transition: all 0.3s ease 0s;
+}
+.main-block {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 15%;
+}
+.adress{
+ height: 200px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 0;
+}
+.adress p{
+  font-size: calc(12px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color:#e1e1e1;
+  font-weight: 400;
+  line-height: 35px;
+}
+.map-container {
+  width: 100%;
+}
+.map {
+  height: 450px;
+  min-width: 70%;
+}
+.map iframe{
+  width: 100%;
+  height: 65%;
+}
+.footer {
+  width: 100%;
+  height: 320px;
+  background-color: #121314;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10% 0 5% 0;
+}
+.about p:first-child {
+  font-size: calc(15px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+  padding: 0 0 3% 0;
+}
+.about p{
+  font-size: calc(14px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #3b3c3e;
+  font-weight: 400;
+  padding: 0 0 3% 0;
+  line-height: 25px;
+}
+.phone {
+  text-align: right;
+  width: 40%;
+  font-size: calc(14px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+}
+}
+@media only screen and (max-width: 900px){
+  body{
+    min-height: 100%;
+  }
+  body.lock{
+    overflow: hidden;
+  }
+  .container{
+     min-height: 100%;
+  }
+ .header {
+  height: 120px;
+}
+.header-body{
+  padding: 2% 5% 0 5%;
+}
+.logo {
+  width: 20%;
+  background: url(../img/logo-fish.png) 20% 65%/65% no-repeat;
+  z-index: 1;
+}
+.contact {
+ width: 60%;
+ top: 0;
+ left: 0;
+ padding: 5.5% 0 0 0;
+}
+.contact p{
+  line-height: 20px;
+  font-size: calc(10px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+}
+.header-menu {
+  overflow: auto;
+ position: fixed;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ top: -100%;
+ left: 0;
+ width: 20%;
+ height: 30%;
+ border-radius: 7px;
+ background-color: rgb(62, 63, 66);
+ padding: 3%;
+ z-index: 2;
+ transition: all 0.4s ease 0s;
+}
+.header-menu.active{
+  height: 200px;
+  justify-content: space-around;
+  width: 25%;
+  top: 115px;
+}
+.header-list{
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.header-list li{
+  height: 35%;
+  font-size: calc(15px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 500;
+}
+
+.header-list li:hover{
+  border-bottom: 4px solid #e1e1e1;
+  padding-bottom: 1%;
+}
+.header-burger{
+ display: block;
+ position: relative;
+ top: 40%;
+ right: 5%;
+ width: 70px;
+ height: 45%;
+ z-index: 3;
+}
+.header-burger:before,
+.header-burger:after{
+  content: '';
+  background-color:#e1e1e1;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+.header-burger:before{
+  top: -8px;
+}
+.header-burger:after{
+  bottom: 20px;
+}
+.header-burger.active:before{
+ transform:rotate(45deg);
+ top:5px
+}
+.header-burger.active:after{
+ transform:rotate(-45deg);
+ bottom: 43px;
+}
+.header-burger.active span{
+  transform: scale(0);
+}
+.header-burger span{
+position: absolute;
+background-color:#e1e1e1;
+left: 0;
+width: 100%;
+height: 3px;
+top: 10px;
+transition: all 0.3s ease 0s;
+}
+.title {
+  padding: 5% 0 3% 0;
+}
+.main-block {
+  min-height: 100%;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+.adress{
+ height: 100px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 0;
+}
+.adress p{
+  font-size: calc(10px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color:#e1e1e1;
+  font-weight: 400;
+  line-height: 35px;
+}
+.map-container {
+  width: 100%;
+}
+.map {
+  height: 400px;
+  min-width: 70%;
+}
+.map iframe{
+  width: 100%;
+  height: 90%;
+}
+.footer {
+  width: 100%;
+  height: 320px;
+  background-color: #121314;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5% 0 5% 0;
+}
+@media only screen and (max-width: 450px){
+  body.lock{
+    overflow: hidden;
+  }
+ .header {
+  height: 120px;
+}
+.logo {
+  width: 25%;
+  background: url(../img/logo-fish.png) 20% 65%/100% no-repeat;
+  z-index: 1;
+}
+.contact {
+ width: 40%;
+ top: 0;
+ left: 0;
+ padding: 5.5% 0 0 0;
+}
+.contact p{
+  line-height: 20px;
+  font-size: calc(10px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+}
+.header-menu {
+  overflow: auto;
+ position: fixed;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ top: -100%;
+ left: 0;
+ width: 20%;
+ height: 30%;
+ border-radius: 7px;
+ background-color: rgb(62, 63, 66);
+ padding: 3%;
+ z-index: 2;
+ transition: all 0.4s ease 0s;
+}
+.header-menu.active{
+  height: 220px;
+  justify-content: space-around;
+  width: 130px;
+  top: 115px;
+  padding: 0 0 0 7%;
+}
+
+.header-list{
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.header-list ul {
+  height: 65px;
+  font-size: calc(15px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 500;
+}
+
+.header-list li:hover{
+  border-bottom: 4px solid #e1e1e1;
+  padding-bottom: 5%;
+}
+.header-burger{
+ display: block;
+ position: relative;
+ top: 40%;
+ right: 4%;
+ width: 55px;
+ height: 45%;
+ z-index: 3;
+}
+.header-burger:before,
+.header-burger:after{
+  content: '';
+  background-color:#e1e1e1;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+.header-burger:before{
+  top: -4px;
+}
+.header-burger:after{
+  bottom: 25px;
+}
+.header-burger.active:before{
+ transform:rotate(45deg);
+ top:8px
+}
+.header-burger.active:after{
+ transform:rotate(-45deg);
+ bottom: 39px;
+}
+.header-burger.active span{
+  transform: scale(0);
+}
+.header-burger span{
+position: absolute;
+background-color:#e1e1e1;
+left: 0;
+width: 100%;
+height: 3px;
+top: 9px;
+transition: all 0.3s ease 0s;
+}
+.title {
+  padding: 15% 0 3% 0;
+}
+.main-block {
+  min-height: 100%;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 10% 0 10%;
+}
+.adress{
+ height: 100px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 0;
+}
+.adress p{
+  font-size: calc(10px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color:#e1e1e1;
+  font-weight: 400;
+  line-height: 35px;
+}
+.map-container {
+  width: 100%;
+}
+.map {
+  height: 220px;
+  min-width: 60%;
+}
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  width: 100%;
+  height: 45%;
+  background-color: #121314;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5%;
+}
+.about {
+  width: 50%;
+}
+.about p:first-child {
+  font-size: calc(18px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+  padding: 0 0 3% 0;
+}
+.about p{
+  font-size: calc(13px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #3b3c3e;
+  font-weight: 400;
+  padding: 0 0 3% 0;
+}
+.phone {
+  text-align: right;
+  width: 40%;
+  font-size: calc(13px + 16 * ((100vw - 320px) / (1920 - 320)));
+  color: #e1e1e1;
+  font-weight: 400;
+}
+}
